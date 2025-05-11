@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+app.use(express.json());
 const port = process.env.PORT || 3000;
 
 app.use(cors());
@@ -31,6 +32,42 @@ const users = [
         email: 'joshim@gmail.com'
     },
 ];
+
+app.post('/users', (req, res) => {
+    console.log("trying to create a new user.");
+    console.log(req.body);
+    const newUser = req.body;
+    newUser.id = users.length + 1;
+    users.push(newUser);
+    res.send(newUser);
+})
+
+const userinfo = [
+    {
+        id: 1,
+        name: "jack", 
+        phone: 23432
+    },
+    {
+        id: 2,
+        name: "Joe", 
+        phone: 23434532
+    }
+]
+
+app.post('/userinfo', (req, res) => {
+    console.log("getting user info from server.");
+    const userInfo = req.body;
+    userInfo.id = userinfo.length + 1;
+    userinfo.push(userInfo);
+    res.send(userInfo);
+})
+
+app.get("/userinfo", (req, res) => {
+    res.send(userinfo);
+})
+
+
 
 app.get('/users', (req, res) => {
     res.send(users);
