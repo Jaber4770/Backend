@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 13 Pro",
+        "price": 1099.99,
+        "description": "A powerful phone with ProMotion display and excellent performance.",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    },
+    {
+        "id": 2,
+        "name": "iPhone 13",
+        "price": 999.99,
+        "description": "Sleek and fast, perfect for everyday users who want premium features.",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    },
+    {
+        "id": 3,
+        "name": "iPhone 12 Pro",
+        "price": 899.99,
+        "description": "Still a great choice with its triple-camera system and fast A14 chip.",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    },
+    {
+        "id": 4,
+        "name": "iPhone 12",
+        "price": 799.99,
+        "description": "Balanced in price and features, ideal for budget-conscious Apple fans.",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    },
+    {
+        "id": 5,
+        "name": "iPhone SE 2022",
+        "price": 429.99,
+        "description": "Compact yet powerful, designed for fans of the classic iPhone look.",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    },
+    {
+        "id": 6,
+        "name": "iPhone 11",
+        "price": 599.99,
+        "description": "Colorful and durable with excellent battery life and performance.",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    },
+    {
+        "id": 7,
+        "name": "iPhone XR",
+        "price": 499.99,
+        "description": "A solid older model with reliable performance and Face ID.",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    },
+    {
+        "id": 8,
+        "name": "iPhone X",
+        "price": 399.99,
+        "description": "The first iPhone with OLED display and Face ID, still capable.",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    },
+    {
+        "id": 9,
+        "name": "iPhone 14 Pro Max",
+        "price": 1299.99,
+        "description": "Apple's latest flagship with Dynamic Island and an always-on display.",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+    }
+]
