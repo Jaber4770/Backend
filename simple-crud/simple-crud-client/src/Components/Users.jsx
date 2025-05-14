@@ -1,17 +1,18 @@
 import React, { use, useState } from "react";
+import { Link } from "react-router";
 
 const Users = ({ userPromise }) => {
     const userData = use(userPromise);
-    console.log(userData);
+    // console.log(userData);
     const [userInfo, setUserInfo] = useState(userData);
-    console.log(userInfo);
+    // console.log(userInfo);
 
     const handleOnSubmit = e => {
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
         const user = { name, email };
-        console.log(user);
+        // console.log(user);
 
 
         // create user:
@@ -25,8 +26,8 @@ const Users = ({ userPromise }) => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    console.log(data);
-                    user._id = data.insetId;
+                    // console.log(data);
+                    user._id = data.insertId;
                     const newAddedUser = [...userInfo, user];
                     setUserInfo(newAddedUser);
                     e.target.reset();
@@ -44,7 +45,7 @@ const Users = ({ userPromise }) => {
                 if (data.deletedCount) {
                     const remainingUsers = userInfo.filter(user => user._id != id);
                     setUserInfo(remainingUsers);
-                    console.log(data)
+                    // console.log(data)
                 }
             });
     }
@@ -70,6 +71,8 @@ const Users = ({ userPromise }) => {
                             {u.name}:
                             {u.email}
                             <button onClick={() => handleUserDelete(u._id)}>X</button>
+                            <Link to={`/userdetails/${u._id}`}>details</Link>
+                            <Link to={`/edit/${u._id}`}>Edit</Link>
                         </p>)
                     })
                 }
